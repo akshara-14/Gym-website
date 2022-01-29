@@ -1,0 +1,128 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  /* background-color: black; */
+  /* z-index: -2; */
+}
+
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  position: sticky;
+  top: 0px;
+  align-items: center;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 95%;
+  width: 100%;
+  z-index: -1;
+  /* opacity: 0.9; */
+}
+
+/* Navigation Bar: Logo and Image */
+#logo {
+  margin: 10px 34px;
+}
+
+#logo img {
+  height: 50px;
+  width: 75px;
+  margin: 3px 3px;
+  border-radius: 50%;
+}
+
+/* Navigation Bar: List Styling */
+
+#navbar ul {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  margin: 10px;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.1rem;
+}
+
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 8px 29px;
+  text-decoration: none;
+  margin: 10px 0px;
+}
+
+#navbar ul li a:hover {
+  background: linear-gradient(orange, rgba(0, 0, 0, 0.5));
+  box-shadow: -5px 5px 10px 0 rgba(0, 0, 0, 0.4);
+  transition: 0.5s;
+  color: black;
+  background-color: rgba(255, 145, 0);
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 300px 200px;
+  justify-content: center;
+  align-items: center;
+  height: 370px;
+  text-emphasis-color: white;
+}
+#myVideo {
+  position: absolute;
+  /* right: 0;
+  bottom: 0; */
+  top: 0px;
+  left: 0px;
+  min-width: 100%;
+  min-height: 50%;
+  overflow: hidden;
+  z-index: -1;
+  /* opacity: 0.88; */
+}
+/* #home::before {
+  content: "";
+  background: url("https://media.istockphoto.com/videos/concept-power-strength-healthy-lifestyle-sport-powerful-attractive-video-id904047934")
+    no-repeat center center/cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 455px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.88;
+} */
+
+#home h1 {
+  color: white;
+  text-align: center;
+  font-family: "Bree Serif", serif;
+  /* background-color: rgba(255, 145, 0); */
+  background: linear-gradient(rgba(255, 145, 0), rgba(0, 0, 0, 0.5));
+  /* height: 69px; */
+}
+
+#home p{
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Bree Serif", serif;
+  background: linear-gradient(rgba(255, 145, 0), rgba(0, 0, 0, 0.5));
+  /* height: 103px; */
+}
+
+/* Utility Classes */
+/* .h-primary {
+  font-size: 2.7rem;
+  padding: 7px;
+  font-family: "Bree Serif", serif;
+} */

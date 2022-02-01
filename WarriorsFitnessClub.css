@@ -13,6 +13,7 @@
   position: sticky;
   top: 0px;
   align-items: center;
+  z-index: 2;
 }
 
 #navbar::before {
@@ -61,6 +62,7 @@
 }
 
 #navbar ul li a:hover {
+  /* border-radius: 10px; */
   background: linear-gradient(orange, rgba(0, 0, 0, 0.5));
   box-shadow: -5px 5px 10px 0 rgba(0, 0, 0, 0.4);
   transition: 0.5s;
@@ -105,24 +107,76 @@
 #home h1 {
   color: white;
   text-align: center;
-  font-family: "Bree Serif", serif;
-  /* background-color: rgba(255, 145, 0); */
-  background: linear-gradient(rgba(255, 145, 0), rgba(0, 0, 0, 0.5));
+  font-family: "Roboto", sans-serif;
+  background-color: rgba(231, 145, 33, 0.8);
+  /* border-radius: 9px; */
+  /* background: linear-gradient(rgba(255, 145, 0), rgba(0, 0, 0, 0.5)); */
   /* height: 69px; */
 }
 
-#home p{
+#home p {
   color: white;
   text-align: center;
   font-size: 1.5rem;
-  font-family: "Bree Serif", serif;
-  background: linear-gradient(rgba(255, 145, 0), rgba(0, 0, 0, 0.5));
+  font-family: "Roboto", sans-serif;
+  background-color: rgba(231, 145, 33, 0.8);
+  padding: 8px;
+  /* border-radius: 9px; */
+  /* background: linear-gradient(rgba(255, 145, 0), rgba(0, 0, 0, 0.5)); */
   /* height: 103px; */
 }
 
+.button a {
+  text-decoration: none;
+  color: white;
+}
+
+.button a:hover {
+  color: white;
+}
+/* Trainers Section */
+#trainers-container {
+  position: absolute;
+
+}
+
+#trainers {
+  margin: 9px;
+  display: flex;
+  z-index: -1;
+}
+
+#trainers .box {
+  border: 2px solid rgba(255, 145, 0);
+  padding: 34px;
+  margin: 2px 20px;
+  border-radius: 23px;
+  background: black;
+  margin-bottom: 20px;
+  
+}
+#trainers .box img {
+  height: 150;
+  display: block;
+  margin: auto;
+  width: 180px;
+}
+#trainers .box p {
+  font-family: "Roboto", sans-serif;
+}
 /* Utility Classes */
-/* .h-primary {
+.h-primary {
   font-size: 2.7rem;
   padding: 7px;
-  font-family: "Bree Serif", serif;
-} */
+  font-family: "Roboto", sans-serif;
+}
+
+.h-secondary {
+  font-size: 1.7rem;
+  padding: 7px;
+  font-family: "Roboto", sans-serif;
+}
+
+.center {
+  text-align: center;
+}
